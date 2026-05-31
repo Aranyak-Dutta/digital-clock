@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+}
+
+.clock-wrap {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0a0a0a;
+}
+
+.clock-inner {
+    text-align: center;
+    padding: 3rem 4rem;
+}
+
+#digital-clock {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.5em;
+    color: #b8952a;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    display: block;
+}
+
+#para {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 72px;
+    color: #d4a843;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.05em;
+    line-height: 1;
+}
+
+.sep {
+    color: #6b4e1a;
+    margin: 0 4px;
+}
+
+.tick {
+    animation: flicker 1s ease-in-out infinite;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.15; }
+}
+
+.meridian {
+    font-size: 24px;
+    color: #b8952a;
+    letter-spacing: 0.2em;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+
+.ms {
+    font-size: 42px;
+    color: #8a6820;
+}
+
+#last {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.35em;
+    color: #b8952a;
+    text-transform: uppercase;
+}
